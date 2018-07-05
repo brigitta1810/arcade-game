@@ -1,6 +1,17 @@
-frontend-nanodegree-arcade-game
-===============================
+# PROJECT 3 - FEWD Nanodegree program
+## Classic Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+###About the game
+This is a classic arcade game, often called Frogger. A bit old fashioned game, but a lot of fun :)
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+###Loading the game
+To load the game you can either download the ZIP from my repository or clone it to your local repository from my GitHub account. Once it is downloaded, you should just open the .html file in your browser, and enjoy the game. 
+
+
+###Playing the game
+You can use the 'down', 'up', 'left', and 'right' arrow keys to move the player to these four directions. The goal is to reach the water. You get a point if you succeed. But watch out for bugs. If you collide with them, you lose a point. If you reach the water or collide with the enemies, you get back to the grass in both cases. But you get a score if you made it to the water, and lose a point if you collided with enemies. 
+
+###Resources for developing this project:
+Udacity Discussion forums
+Randomizing speed: https://www.w3schools.com/js/js_random.asp
+Understanding keyboard handlers and moving object (character) on canvas: https://www.kirupa.com/canvas/moving_shapes_canvas_keyboard.htm
