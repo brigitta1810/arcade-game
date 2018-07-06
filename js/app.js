@@ -1,6 +1,6 @@
 //when player starts game, score is set to 0
 var score = 0
-document.getElementById('yourScore').innerHTML = score;
+var score = document.getElementById('yourScore').innerHTML = score;
 
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
@@ -70,7 +70,7 @@ var Player = function(x, y, speed) {
 Player.prototype.update = function() {
 
 // When reaching the water, the player gets one point, and he/she is back on the grass
-    if (player.y < 10) {
+    if (this.y < 10) {
     score+=1;
     document.getElementById('yourScore').innerHTML = score;
     player.restart();
@@ -84,7 +84,7 @@ Player.prototype.update = function() {
         setTimeout(function () {
             this.x = 0;
             this.y = 0;
-        }, 400);
+        }, 100);
     }
 
 
@@ -96,16 +96,16 @@ Player.prototype.render = function() {
 
 Player.prototype.handleInput = function(direction) {
     if(direction == 'left' && this.x > 1) {
-        this.x -= 70;
+        this.x -= 83;
     }
     if(direction == 'right' && this.x < 398) {
-        this.x += 70;
+        this.x += 83;
     }
     if(direction == 'up' && this.y > 1) {
-        this.y -= 70;
+        this.y -= 101;
     }
     if(direction == 'down' && this.y < 398) {
-        this.y += 70;
+        this.y += 101;
     }
 };
 
